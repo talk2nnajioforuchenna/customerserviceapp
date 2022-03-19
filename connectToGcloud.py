@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 def getData():
     load_dotenv()
     GCP_CONNECT_KEY = os.environ['GCP_CONNECT_KEY']
-     # KEYS = json.loads(GCP_CONNECT_KEY)  # convert JSON to dictionary
-    credentials = service_account.Credentials.from_service_account_file(GCP_CONNECT_KEY)
+    # KEYS = json.loads(GCP_CONNECT_KEY)  # convert JSON to dictionary
+    credentials = service_account.Credentials.from_service_account_file('keys.json')
     datastore_client = datastore.Client(credentials=credentials)
     retValue = ''
     query = datastore_client.query(kind='EndUsers')

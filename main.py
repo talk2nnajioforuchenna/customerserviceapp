@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
     first5 = gcp.getData()
     print(first5)
-    return "Hello  Just Making sure it is working twice {}".format(first5)
+    return str(first5[1:7])
 
 
 if __name__ == "__main__":
