@@ -1,0 +1,1 @@
+GCP_CONNECT_KEY = 'keys.json'
