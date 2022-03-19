@@ -2,6 +2,9 @@ import os
 import json
 from google.cloud import datastore
 from google.oauth2 import service_account
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # GCP_CONNECT_KEY = os.environ['GCP_CONNECT_KEY']
